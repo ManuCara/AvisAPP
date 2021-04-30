@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Avis</string>
+    <string name="News">News</string>
+    <string name="Meteo_del_sangue">Meteo del sangue</string>
+    <string name="Vademecum">Vademecum del donatore</string>
+
+    <color name="bianco">#FFFFFF</color>
+    <color name="text_color">#123BA6</color>
+
+    <dimen name="text_size">18dp</dimen>
+
+
 </resources>

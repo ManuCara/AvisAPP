@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HomePage">
+
+
+    <Button
+        android:id="@+id/News"
+        android:layout_width="229dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="263dp"
+        android:backgroundTint="@color/bianco"
+
+        android:drawableEnd="@drawable/news"
+        android:fontFamily="serif"
+        android:text="@string/News"
+        android:textColor="@color/text_color"
+
+        android:textSize="@dimen/text_size"
+        app:cornerRadius="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/Meteo_sangue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Meteo_sangue"
+        android:layout_width="229dp"
+        android:layout_height="91dp"
+        android:backgroundTint="@color/bianco"
+        android:drawableEnd="@drawable/meteo_del_sangue"
+
+        android:fontFamily="serif"
+        android:text="@string/Meteo_del_sangue"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        app:cornerRadius="22dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/Vademecum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/News" />
+
+    <Button
+        android:id="@+id/Vademecum"
+        android:layout_width="229dp"
+        android:layout_height="91dp"
+
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/bianco"
+        android:drawableEnd="@drawable/vademecum"
+        android:fontFamily="serif"
+        android:text="@string/Vademecum"
+        android:textColor="@color/text_color"
+
+        android:textSize="@dimen/text_size"
+        app:cornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Meteo_sangue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
