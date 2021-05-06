@@ -7,18 +7,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class NavBar extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    final Activity activity = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         drawerLayout = findViewById(R.id.drawer_layout);
     }
@@ -39,52 +38,52 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Profilo(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Contattaci(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void News(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Meteo_sangue(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Vademecum(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Dove_siamo(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Impostazioni(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Logout(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void chi_siamo(View view){
-        redirectActivity(this,Profilo.class,false,activity);
+        redirectActivity(this,Profilo.class,false);
     }
     public void Home(View view){
-        redirectActivity(this,MainActivity.class,false,activity);
+        redirectActivity(this, NavBar.class,false);
     }
 
 
 
 
-    public static void redirectActivity(Activity activity, Class aclass,boolean chiudi,Activity a) {
+    public static void redirectActivity(Activity activity, Class aclass,boolean chiudi) {
         Intent intent = new Intent(activity,aclass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
-        if (chiudi){
-            a.finish();
-        }
+        activity.finish();
     }
 
-    protected void OnPause(){
+    @Override
+    protected void onPause(){
         super.onPause();
         closeMenu(drawerLayout);
     }
+
 
 
 }

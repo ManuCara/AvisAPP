@@ -6,22 +6,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".MainActivity">
+    tools:context=".NavBar"
+    android:background="#D3E2FF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_1" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bg_3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/testo_forse"
+        android:scaleType="fitStart"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:paddingLeft="50dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cuore"
+        android:scaleType="fitStart"
+        android:paddingTop="60dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="ciao" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/nav"
+        android:gravity="start">
+        <include layout="@layout/toolbar_up" />
+    </LinearLayout>
 
-        <include layout="@layout/toolbar_up"/>
-        <include layout="@layout/toolbar_down"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="asdasd"/>
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <include layout="@layout/toolbar_down" />
     </LinearLayout>
 
    <RelativeLayout
@@ -29,8 +70,8 @@
        android:layout_height="match_parent"
        android:layout_gravity="start"
        android:background="@color/black">
-       <include
-           layout="@layout/main_nav_drawer"/>
+
+       <include layout="@layout/main_nav_drawer" />
    </RelativeLayout>
 
 
