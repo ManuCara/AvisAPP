@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,13 +17,15 @@
         android:backgroundTint="@color/bianco"
 
         android:drawableEnd="@drawable/news"
-        android:fontFamily="serif"
+        android:fontFamily="@font/farro_bold"
         android:text="@string/News"
         android:textColor="@color/text_color"
+        android:onClick="News"
 
         android:textSize="@dimen/text_size"
         app:cornerRadius="22dp"
         app:layout_constraintBottom_toTopOf="@+id/Meteo_sangue"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +36,10 @@
         android:layout_width="229dp"
         android:layout_height="91dp"
         android:backgroundTint="@color/bianco"
-        android:drawableEnd="@drawable/meteo_del_sangue"
+        android:onClick="blood_weather"
+        android:drawableEnd="@drawable/news"
 
-        android:fontFamily="serif"
+        android:fontFamily="@font/farro_bold"
         android:text="@string/Meteo_del_sangue"
         android:textColor="@color/text_color"
         android:textSize="@dimen/text_size"
@@ -55,7 +59,8 @@
         android:layout_marginBottom="200dp"
         android:backgroundTint="@color/bianco"
         android:drawableEnd="@drawable/vademecum"
-        android:fontFamily="serif"
+        android:fontFamily="@font/farro_bold"
+        android:onClick="Vademecum"
         android:text="@string/Vademecum"
         android:textColor="@color/text_color"
 

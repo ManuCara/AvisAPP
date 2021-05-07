@@ -2,6 +2,8 @@ package com.example.avis;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,46 +12,29 @@ import android.widget.Toast;
 
 public class HomePage extends AppCompatActivity {
 
-
-    Button btn_news;
-    Button btn_meteo;
-    Button btn_vademecum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+    }
 
-        btn_news = findViewById(R.id.News);
-        btn_meteo = findViewById(R.id.Meteo_sangue);
-        btn_vademecum = findViewById(R.id.Vademecum);
+    public void News(View view){
+        redirectActivity(this,News.class);
+    }
+    public void blood_weather(View view){
+        redirectActivity(this,weather.class);
+    }
+    public void Vademecum(View view){
+        redirectActivity(this,vade.class);
+    }
 
-        btn_news.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
-                Toast.makeText(getApplicationContext(),"activity news",Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        });
+    private void redirectActivity(Activity activity, Class aClass) {
+        startActivity(new Intent(activity, aClass));
+        Toast.makeText(getApplicationContext(),"activity "+aClass.getName(),Toast.LENGTH_SHORT).show();
+    }
 
-        btn_meteo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
-                Toast.makeText(getApplicationContext(),"activity meteo del sangue",Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        });
-
-        btn_vademecum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
-                Toast.makeText(getApplicationContext(),"activity vademecum",Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        });
-
-
+    @Override
+    protected void onPause(){
+        super.onPause();
     }
 }
