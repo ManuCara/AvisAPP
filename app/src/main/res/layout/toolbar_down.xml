@@ -30,6 +30,6 @@
         android:layout_weight="1"
         android:layout_gravity="bottom"
         android:onClick="Contattaci"
-        android:src="@drawable/contattaci"
+        android:src="@drawable/contact_us"
         android:padding="16dp"/>
 </LinearLayout>

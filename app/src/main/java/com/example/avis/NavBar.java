@@ -46,16 +46,16 @@ public class NavBar extends AppCompatActivity {
     public void News(View view){
         redirectActivity(this,Profilo.class,false);
     }
-    public void Meteo_sangue(View view){
+    public void blood_weather(View view){
         redirectActivity(this,Profilo.class,false);
     }
     public void Vademecum(View view){
         redirectActivity(this,Profilo.class,false);
     }
-    public void Dove_siamo(View view){
+    public void where_we_are(View view){
         redirectActivity(this,Profilo.class,false);
     }
-    public void Impostazioni(View view){
+    public void Settings(View view){
         redirectActivity(this,Profilo.class,false);
     }
     public void Logout(View view){

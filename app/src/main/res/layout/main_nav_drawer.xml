@@ -33,20 +33,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Profilo">
+        android:onClick="Profile">
 
         <TextView
-
-            android:drawableStart="@drawable/profilo"
-
-            android:drawableEnd="@drawable/arrow_right"
-            android:drawablePadding="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/profilo"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
             android:text="Profilo"
+            android:textColor="#153894"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="#153894"/>
+            android:textStyle="bold" />
     </LinearLayout>
     <!-- Contattaci -->
     <LinearLayout
@@ -55,11 +53,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Contattaci">
+        android:onClick="Contact_us">
 
         <TextView
 
-            android:drawableStart="@drawable/contattaci"
+            android:drawableStart="@drawable/contact_us"
 
             android:drawableEnd="@drawable/arrow_right"
             android:drawablePadding="16dp"
@@ -99,11 +97,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Meteo_sangue">
+        android:onClick="blood_weather">
 
         <TextView
 
-            android:drawableStart="@drawable/meteo"
+            android:drawableStart="@drawable/weather"
 
             android:drawableEnd="@drawable/arrow_right"
             android:drawablePadding="16dp"
@@ -143,11 +141,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Dove_siamo">
+        android:onClick="where_we_are">
 
         <TextView
 
-            android:drawableStart="@drawable/dove_siamo"
+            android:drawableStart="@drawable/where_we_are"
 
             android:drawableEnd="@drawable/arrow_right"
             android:drawablePadding="16dp"
@@ -165,7 +163,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="Impostazioni">
+        android:onClick="Settings">
 
         <TextView
 

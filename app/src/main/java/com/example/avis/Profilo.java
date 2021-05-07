@@ -17,31 +17,32 @@ public class Profilo extends AppCompatActivity {
         setContentView(R.layout.activity_profilo);
         getSupportActionBar().hide();
         drawerLayout = findViewById(R.id.drawer_layout);
+        
     }
 
     public void Menu(View view){
         NavBar.OpenMenu(drawerLayout);
     }
-    public void Profilo(View view){
+    public void Profile(View view){
         //recreate();
         NavBar.closeMenu(drawerLayout);
     }
-    public void Contattaci(View view){
+    public void Contact_us(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
     public void News(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
-    public void Meteo_sangue(View view){
+    public void blood_weather(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
     public void Vademecum(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
-    public void Dove_siamo(View view){
+    public void where_we_are(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
-    public void Impostazioni(View view){
+    public void Settings(View view){
         NavBar.redirectActivity(this, NavBar.class,true);
     }
     public void Logout(View view){
