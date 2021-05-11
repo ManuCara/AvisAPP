@@ -30,7 +30,6 @@ public class HomePage extends AppCompatActivity {
 
     private void redirectActivity(Activity activity, Class aClass) {
         startActivity(new Intent(activity, aClass));
-        Toast.makeText(getApplicationContext(),"activity "+aClass.getName(),Toast.LENGTH_SHORT).show();
     }
 
     @Override
