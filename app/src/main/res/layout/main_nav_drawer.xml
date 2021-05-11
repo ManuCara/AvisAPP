@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Menù"
             android:textSize="22dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:padding="16dp"
             android:textColor="#E8F0FF"/>
     </LinearLayout>
@@ -44,7 +44,7 @@
             android:text="Profilo"
             android:textColor="#153894"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/farro_bold" />
     </LinearLayout>
     <!-- Contattaci -->
     <LinearLayout
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:text="Contattaci"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- News -->
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:text="News"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Meteo del sangue -->
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:text="Meteo del sangue"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Vademecum -->
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:text="Vademecum del donatore"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Dove siamo -->
@@ -153,7 +153,7 @@
             android:layout_height="wrap_content"
             android:text="Dove siamo"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Impostazioni -->
@@ -175,7 +175,7 @@
             android:layout_height="wrap_content"
             android:text="Impostazioni"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Esci -->
@@ -197,7 +197,7 @@
             android:layout_height="wrap_content"
             android:text="ESCI"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
     <!-- Chi siamo -->
@@ -219,7 +219,7 @@
             android:layout_height="wrap_content"
             android:text="Chi siamo"
             android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
 

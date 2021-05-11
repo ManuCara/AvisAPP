@@ -7,40 +7,10 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     tools:context=".NavBar"
-    android:background="#D3E2FF">
+    android:background="@drawable/home_bg">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/bg_1" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/bg_2" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitEnd"
-        android:src="@drawable/bg_3" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/testo_forse"
-        android:scaleType="fitStart"
-        android:scaleY="0.7"
-        android:scaleX="0.7"
-        android:paddingLeft="50dp" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/heart"
-        android:scaleType="fitStart"
-        android:paddingTop="60dp"/>
 
     <TextView
         android:layout_width="match_parent"
