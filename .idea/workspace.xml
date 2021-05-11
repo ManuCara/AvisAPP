@@ -47,6 +47,9 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="device.file.explorer" />
   </component>
@@ -150,6 +153,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="687" y="226" key="#PSD" timestamp="1620757563907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="226" key="#PSD/0.0.1920.1040/-1680.16.1680.1010@0.0.1920.1040" timestamp="1620757563907" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620397050972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
