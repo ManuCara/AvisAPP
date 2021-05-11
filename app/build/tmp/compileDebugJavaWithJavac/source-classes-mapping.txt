@@ -1,0 +1,10 @@
+com/example/avis/weather.java
+ com.example.avis.weather
+com/example/avis/BuildConfig.java
+ com.example.avis.BuildConfig
+com/example/avis/HomePage.java
+ com.example.avis.HomePage
+com/example/avis/News.java
+ com.example.avis.News
+com/example/avis/vade.java
+ com.example.avis.vade
