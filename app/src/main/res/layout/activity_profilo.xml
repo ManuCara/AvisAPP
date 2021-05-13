@@ -5,24 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Profilo"
     android:id="@+id/drawer_layout"
-    tools:context=".NavBar"
-    android:background="@drawable/home_bg">
-
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="ciao" />
+    android:background="#D3E2FF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/nav"
         android:gravity="start">
         <include layout="@layout/toolbar_up" />
     </LinearLayout>
@@ -35,14 +25,24 @@
         <include layout="@layout/toolbar_down" />
     </LinearLayout>
 
-   <RelativeLayout
-       android:layout_width="300dp"
-       android:layout_height="match_parent"
-       android:layout_gravity="start"
-       android:background="@color/black">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profilo"
+        android:gravity="center"/>
 
-       <include layout="@layout/main_nav_drawer" />
-   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F9FBFF">
+
+        <include layout="@layout/main_nav_drawer"/>
+
+
+
+    </RelativeLayout>
 
 
 
