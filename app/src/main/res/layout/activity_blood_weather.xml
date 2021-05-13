@@ -5,24 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
     android:id="@+id/drawer_layout"
-    tools:context=".NavBar"
-    android:background="@drawable/home_bg">
-
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="ciao" />
-
+    tools:context=".blood_weather">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/nav"
         android:gravity="start">
         <include layout="@layout/toolbar_up" />
     </LinearLayout>
@@ -35,16 +24,19 @@
         <include layout="@layout/toolbar_down" />
     </LinearLayout>
 
-   <RelativeLayout
-       android:layout_width="300dp"
-       android:layout_height="match_parent"
-       android:layout_gravity="start"
-       android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F9FBFF">
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
 
-       <include layout="@layout/main_nav_drawer" />
-   </RelativeLayout>
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="meteo sangue"
+        android:gravity="center"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

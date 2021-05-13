@@ -7,18 +7,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class News extends AppCompatActivity {
+public class Vademecum extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_vademecum);
         drawerLayout = findViewById(R.id.drawer_layout);
 
 
     }
+
     public void Menu(View view){
         HomePage.OpenMenu(drawerLayout);
     }
@@ -29,13 +30,13 @@ public class News extends AppCompatActivity {
         HomePage.redirectActivity(this, Contact_us.class,false);
     }
     public void News(View view){
-        HomePage.closeMenu(drawerLayout);
+        HomePage.redirectActivity(this, Logout.class,false);
     }
     public void blood_weather(View view){
         HomePage.redirectActivity(this, blood_weather.class,false);
     }
     public void Vademecum(View view){
-        HomePage.redirectActivity(this, Vademecum.class,false);
+        HomePage.closeMenu(drawerLayout);
     }
     public void where_we_are(View view){
         HomePage.redirectActivity(this, where_we_are.class,false);

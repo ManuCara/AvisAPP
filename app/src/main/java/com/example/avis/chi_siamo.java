@@ -7,66 +7,62 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Profilo extends AppCompatActivity {
+public class chi_siamo extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profilo);
-        getSupportActionBar().hide();
+        setContentView(R.layout.activity_chi_siamo);
         drawerLayout = findViewById(R.id.drawer_layout);
-        
+
     }
 
     public void Menu(View view){
-        NavBar.OpenMenu(drawerLayout);
+        HomePage.OpenMenu(drawerLayout);
     }
     public void Profile(View view){
-        //recreate();
-        NavBar.closeMenu(drawerLayout);
+        HomePage.redirectActivity(this, Profile.class,false);
     }
     public void Contact_us(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, Contact_us.class,false);
     }
     public void News(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, Logout.class,false);
     }
     public void blood_weather(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, blood_weather.class,false);
     }
     public void Vademecum(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, Vademecum.class,false);
     }
     public void where_we_are(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
-    }
-    public void Settings(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
-    }
-    public void Logout(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, where_we_are.class,false);
     }
     public void chi_siamo(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.closeMenu(drawerLayout);
+    }
+    public void Settings(View view){
+        HomePage.redirectActivity(this, Settings.class,false);
+    }
+    public void Logout(View view){
+        HomePage.redirectActivity(this, Logout.class,false);
     }
     public void Home(View view){
-        NavBar.redirectActivity(this, NavBar.class,true);
+        HomePage.redirectActivity(this, HomePage.class,true);
     }
-
     @Override
     protected void onPause(){
         super.onPause();
-        NavBar.closeMenu(drawerLayout);
+        HomePage.closeMenu(drawerLayout);
     }
     @Override
     public void onBackPressed() {
-        Intent setIntent = new Intent(this, NavBar.class);
+        Intent setIntent = new Intent(this, HomePage.class);
         setIntent.addCategory(Intent.CATEGORY_HOME);
         setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(setIntent);
+        finish();
     }
-
-
 }

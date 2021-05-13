@@ -1,24 +1,24 @@
 package com.example.avis;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class News extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+public class Settings extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_settings);
         drawerLayout = findViewById(R.id.drawer_layout);
 
-
     }
+
     public void Menu(View view){
         HomePage.OpenMenu(drawerLayout);
     }
@@ -29,7 +29,7 @@ public class News extends AppCompatActivity {
         HomePage.redirectActivity(this, Contact_us.class,false);
     }
     public void News(View view){
-        HomePage.closeMenu(drawerLayout);
+        HomePage.redirectActivity(this, Logout.class,false);
     }
     public void blood_weather(View view){
         HomePage.redirectActivity(this, blood_weather.class,false);
@@ -44,7 +44,7 @@ public class News extends AppCompatActivity {
         HomePage.redirectActivity(this, chi_siamo.class,false);
     }
     public void Settings(View view){
-        HomePage.redirectActivity(this, Settings.class,false);
+        HomePage.closeMenu(drawerLayout);
     }
     public void Logout(View view){
         HomePage.redirectActivity(this, Logout.class,false);

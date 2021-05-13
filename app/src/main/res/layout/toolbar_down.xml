@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_weight="1"
-        android:onClick="Profilo"
+        android:onClick="Profile"
         android:src="@drawable/profilo"
         android:padding="16dp"/>
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="bottom"
-        android:onClick="Contattaci"
+        android:onClick="Contact_us"
         android:src="@drawable/contact_us"
         android:padding="16dp"/>
 </LinearLayout>
