@@ -153,9 +153,33 @@
             android:layout_height="wrap_content"
             android:text="Dove siamo"
             android:textSize="20dp"
+            android:fontFamily="@font/Farro_Bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+
+    <!-- Chi siamo -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="chi_siamo">
+
+        <TextView
+
+            android:drawableStart="@drawable/chi_siamo"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi siamo"
+            android:textSize="20dp"
             android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
+
     <!-- Impostazioni -->
     <LinearLayout
         android:padding="10dp"
@@ -178,6 +202,7 @@
             android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
     </LinearLayout>
+
     <!-- Esci -->
     <LinearLayout
         android:padding="10dp"
@@ -196,28 +221,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ESCI"
-            android:textSize="20dp"
-            android:fontFamily="@font/farro_bold"
-            android:textColor="#153894"/>
-    </LinearLayout>
-    <!-- Chi siamo -->
-    <LinearLayout
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:onClick="chi_siamo">
-
-        <TextView
-
-            android:drawableStart="@drawable/chi_siamo"
-
-            android:drawableEnd="@drawable/arrow_right"
-            android:drawablePadding="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chi siamo"
             android:textSize="20dp"
             android:fontFamily="@font/farro_bold"
             android:textColor="#153894"/>
