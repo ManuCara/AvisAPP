@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home_bg"
+    android:background="@drawable/homesolocuore"
     android:id="@+id/drawer_layout"
     tools:context=".Vademecum">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upbarr"
         android:orientation="vertical"
         android:gravity="start">
         <include layout="@layout/toolbar_up" />
@@ -25,18 +26,36 @@
         <include layout="@layout/toolbar_down" />
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#F9FBFF">
-        <include layout="@layout/main_nav_drawer" />
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="vademecum"
-        android:gravity="center"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/upbarr"
+        android:background="@drawable/background_round"
+        android:orientation="horizontal"
+        >
 
-</androidx.drawerlayout.widget.DrawerLayout>
+        <ImageView
+            android:id="@+id/search_lens"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            app:srcCompat="@drawable/search_lens" />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_for_search"
+            android:textColorHint="#83ADFF"
+            android:padding="7dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -27,6 +27,7 @@
     <string name="title_activity_blood_weather">blood_weather</string>
     <string name="title_activity_where_we_are">where_we_are</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="hint_for_search">cerca parola chiave</string>
 
 
 </resources>
