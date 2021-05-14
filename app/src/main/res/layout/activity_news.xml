@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="start">
-        <include layout="@layout/toolbar_up" />
+        <include layout="@layout/toolbar_activity" />
     </LinearLayout>
 
     <LinearLayout
