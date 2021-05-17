@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -119,24 +120,6 @@ public class Vademecum extends AppCompatActivity {
                 lastPosition = groupPosition;
             }
         });
-        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
-            @Override
-            public boolean onGroupClick(ExpandableListView expandableListView, View view, int i, long l) {
-                if(lastView!=null && expListView.isGroupExpanded(lastPosition)){changeBackgroundToNormal(lastView);}
-                myHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if(expListView.isGroupExpanded(lastPosition)){
-                            changeBackgroundwhenExpanded(view.findViewById(R.id.content_of_header));
-                        }else {
-                            changeBackgroundToNormal(view.findViewById(R.id.content_of_header));
-                        }
-                    }
-                },2);
-                lastView=view.findViewById(R.id.content_of_header);
-                return false;
-            }
-        });
     }
     private void addData(ArrayList<String> title,ArrayList<String> Content) {
         listDataHeader = new ArrayList<String>();
@@ -149,10 +132,5 @@ public class Vademecum extends AppCompatActivity {
                     ContentSlave);
         }
     }
-    public void changeBackgroundwhenExpanded(View view){
-        view.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.background_up_round));
-    }
-    public void changeBackgroundToNormal(View view){
-        view.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.background_round));
-    }
+
 }

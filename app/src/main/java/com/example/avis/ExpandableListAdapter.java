@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -93,7 +94,16 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
                 .findViewById(R.id.lblListHeader);
         lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);
+        LinearLayout bevGroup = (LinearLayout) convertView.findViewById(R.id.content_of_header);
 
+        if(isExpanded)
+        {
+            bevGroup.setBackground(ContextCompat.getDrawable(_context,R.drawable.background_up_round));
+        }
+        else
+        {
+            bevGroup.setBackground(ContextCompat.getDrawable(_context,R.drawable.background_round));
+        }
         return convertView;
     }
 
