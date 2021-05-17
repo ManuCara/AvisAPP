@@ -47,7 +47,7 @@
             android:padding="7dp"
             app:srcCompat="@drawable/search_lens" />
         <EditText
-
+            android:id="@+id/search_bar_vademecum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_for_search"

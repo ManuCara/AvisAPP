@@ -6,8 +6,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -20,7 +22,7 @@ import java.util.Timer;
 
 public class Vademecum extends AppCompatActivity {
 
-    Handler myHandler;
+    EditText searchBar;
     ArrayList<String> testHeader= new ArrayList<>();
     ArrayList<String> testContent= new ArrayList<>();
     int lastPosition = -1;
@@ -29,7 +31,6 @@ public class Vademecum extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vademecum);
-        myHandler=new Handler();
         //test variables and arrays
 
         String textHeader="COSA OCCORE PORTARE PRESENTANDOSI ALL’UNITÀ DI RACCOLTA PER EFFETTUARE LE VISITE?";
@@ -49,8 +50,26 @@ public class Vademecum extends AppCompatActivity {
         testContent.add(textContent);
 
 
-
         prepareLists(testHeader,testContent);
+        searchBar= findViewById(R.id.search_bar_vademecum);
+        searchBar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                clearList(expListView);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                //add a method to modify the ArrayLists
+                if(editable.toString().isEmpty()){
+                prepareLists(testHeader,testContent);}
+            }
+        });
     }
 
     public void Profile(View view){
@@ -131,6 +150,10 @@ public class Vademecum extends AppCompatActivity {
             listDataChild.put(listDataHeader.get(i),
                     ContentSlave);
         }
+    }
+    private void clearList(ExpandableListView expandableListView){
+        ArrayList<String> emptyArray=new ArrayList<String>();
+        prepareLists(emptyArray,emptyArray);
     }
 
 }
