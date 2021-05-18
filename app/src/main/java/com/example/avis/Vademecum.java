@@ -25,6 +25,8 @@ public class Vademecum extends AppCompatActivity {
     EditText searchBar;
     ArrayList<String> testHeader= new ArrayList<>();
     ArrayList<String> testContent= new ArrayList<>();
+    ArrayList<String> filteredArrayHead= new ArrayList<>();
+    ArrayList<String> filteredArrayContent= new ArrayList<>();
     int lastPosition = -1;
     View lastView = null;
     @Override
@@ -33,19 +35,11 @@ public class Vademecum extends AppCompatActivity {
         setContentView(R.layout.activity_vademecum);
         //test variables and arrays
 
-        String textHeader="COSA OCCORE PORTARE PRESENTANDOSI ALL’UNITÀ DI RACCOLTA PER EFFETTUARE LE VISITE?";
+        String textHeader="COSA OCCORRE PORTARE PRESENTANDOSI ALL’UNITÀ DI RACCOLTA PER EFFETTUARE LE VISITE?";
         String textContent="Per poter effettuare le visite preliminari o la donazione di sangue è necessario: \n" +
                 "\n" +
                 "• Tessera sanitaria\n" +
                 "• Documento di riconoscimento in corso di validità";
-        testHeader.add(textHeader);
-        testContent.add(textContent);
-        testHeader.add(textHeader);
-        testContent.add(textContent);
-        testHeader.add(textHeader);
-        testContent.add(textContent);
-        testHeader.add(textHeader);
-        testContent.add(textContent);
         testHeader.add(textHeader);
         testContent.add(textContent);
 
@@ -67,7 +61,11 @@ public class Vademecum extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 //add a method to modify the ArrayLists
                 if(editable.toString().isEmpty()){
-                prepareLists(testHeader,testContent);}
+                prepareLists(testHeader,testContent);
+                }else {
+                    filtraArray(editable.toString());
+                    prepareLists(filteredArrayHead,filteredArrayContent);
+                }
             }
         });
     }
@@ -155,5 +153,26 @@ public class Vademecum extends AppCompatActivity {
         ArrayList<String> emptyArray=new ArrayList<String>();
         prepareLists(emptyArray,emptyArray);
     }
-
+    private void filtraArray(String word){
+        ArrayList<String> arrayListHead=new ArrayList<>();
+        ArrayList<String> arrayListContent=new ArrayList<>();
+        arrayListHead=testHeader;
+        arrayListContent=testContent;
+        filteredArrayContent.clear();
+        filteredArrayHead.clear();
+        for (String names : arrayListHead) {
+            if (names.toLowerCase().contains(word.toLowerCase())) {
+                filteredArrayHead.add(names);
+                filteredArrayContent.add(arrayListContent.get(arrayListHead.indexOf(names)));
+            }
+        }
+        for (String names : arrayListContent) {
+            if (names.toLowerCase().contains(word.toLowerCase())) {
+                if (!filteredArrayContent.contains(names)){
+                filteredArrayContent.add(names);
+                filteredArrayHead.add(arrayListHead.get(arrayListContent.indexOf(names)));
+                }
+            }
+        }
+    }
 }
