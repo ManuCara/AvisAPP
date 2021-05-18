@@ -27,6 +27,15 @@
     <string name="title_activity_blood_weather">blood_weather</string>
     <string name="title_activity_where_we_are">where_we_are</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="log_out">Log out</string>
+    <string name="termini_di_utilizzo">Termini di utilizzo</string>
+    <string name="privacy">Privacy</string>
+    <string name="on">ON</string>
+    <string name="notifiche">Notifiche</string>
+    <string name="bacground_of_notification_on_of">bacground_of_notification_on_of</string>
+    <string name="right_arrow">right_arrow</string>
+    <string name="off">OFF</string>
+    <string name="settings">Impostazioni</string>
 
 
 </resources>
