@@ -37,6 +37,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:padding="10dp"
             android:id="@+id/Text_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,6 +203,8 @@
 
 
         <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
             android:id="@+id/Legenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -213,14 +216,105 @@
             android:layout_below="@+id/table"
             />
 
-        
-        <ImageView
+
+        <TableLayout
+            android:id="@+id/info_legenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/legenda"
+            android:background="@drawable/legenda"
+            android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/Legenda"
-            />
+
+            android:layout_below="@+id/Legenda">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sun"
+                    android:paddingHorizontal="20dp"
+                    app:tint="#123BA6"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/partly_cloudy_day"
+                    android:paddingHorizontal="20dp"
+                    app:tint="#123BA6"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wet"
+                    android:paddingHorizontal="20dp"
+                    app:tint="#123BA6"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cloud_lightning"
+                    android:paddingHorizontal="20dp"
+                    app:tint="#123BA6" />
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buona"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfarro_bold"
+                    android:textColor="#123BA6"
+                    android:textSize="10dp"/>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="Minima"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfarro_bold"
+                    android:textColor="#123BA6"
+                    android:textSize="10dp"/>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="Carenza"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfarro_bold"
+                    android:textColor="#123BA6"
+                    android:textSize="10dp"/>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="Emergenza"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfarro_bold"
+                    android:textColor="#123BA6"
+                    android:textSize="10dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+<TextView
+    android:id="@+id/r_1"
+    android:layout_below="@+id/info_legenda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:fontFamily="@font/sfarro_bold"
+    android:textColor="#123BA6"
+    android:textSize="12dp"
+    android:text=". I dati si riferiscono al mese di maggio"/>
+        <TextView
+            android:layout_below="@+id/r_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#123BA6"
+            android:textSize="12dp"
+            android:text=". Una buona disponibilità non significa che non ci sia bisogno di sangue"/>
 
 
 
