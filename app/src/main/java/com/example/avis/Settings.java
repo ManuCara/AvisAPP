@@ -51,10 +51,10 @@ public class Settings extends AppCompatActivity {
         }
     }
     public void Privacy(View view){
-        //implement action
+        startActivity(new Intent(getApplicationContext(),TermsAndPrivacy.class).putExtra("type","Privacy"));
     }
     public void terms_of_condition(View view){
-        //implement action
+        startActivity(new Intent(getApplicationContext(),TermsAndPrivacy.class).putExtra("type","Termini Di Utilizzo"));
     }
     public void logoutFromSettings(View view){
         //implement action
