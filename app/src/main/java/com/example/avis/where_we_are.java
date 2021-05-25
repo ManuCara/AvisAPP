@@ -40,4 +40,26 @@ public class where_we_are extends AppCompatActivity {
         startActivity(setIntent);
         finish();
     }
+<<<<<<< Updated upstream
 }
+=======
+
+
+    public void entrambi(View v){
+        Uri uri = Uri.parse("https://www.google.com/maps/search/avis+perugia+organizzazione/@43.0928964,12.3436733,14z");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+    public void primo(View v){
+        Uri uri = Uri.parse("https://www.google.com/maps/search/avis+perugia+organizzazione/@43.0928964,12.3436733,14z");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+    public void secondo(View v){
+        Uri uri = Uri.parse("https://www.google.com/maps/search/avis+perugia+organizzazione/@43.0928964,12.3436733,14z");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+}
+
+>>>>>>> Stashed changes
