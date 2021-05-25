@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9FBFF">
+
+    <!-- -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/menu_bg"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menù"
+            android:textSize="22dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:padding="16dp"
+            android:textColor="#E8F0FF"/>
+    </LinearLayout>
+
+
+
+    <!-- Profilo -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="Profile">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/profilo"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:text="Profilo"
+            android:textColor="#153894"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold" />
+    </LinearLayout>
+    <!-- Contattaci -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="Contact_us">
+
+        <TextView
+
+            android:drawableStart="@drawable/contact_us"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contattaci"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+    <!-- News -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="News">
+
+        <TextView
+            android:drawableStart="@drawable/news_nav"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+    <!-- Meteo del sangue -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="blood_weather">
+
+        <TextView
+
+            android:drawableStart="@drawable/weather"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meteo del sangue"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+    <!-- Vademecum -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="Vademecum">
+
+        <TextView
+
+            android:drawableStart="@drawable/vademecum_nav"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vademecum del donatore"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+    <!-- Dove siamo -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="where_we_are">
+
+        <TextView
+
+            android:drawableStart="@drawable/where_we_are"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dove siamo"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+
+    <!-- Chi siamo -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="chi_siamo">
+
+        <TextView
+
+            android:drawableStart="@drawable/chi_siamo"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi siamo"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+
+    <!-- Impostazioni -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="Settings">
+
+        <TextView
+
+            android:drawableStart="@drawable/settings"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impostazioni"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+
+    <!-- Esci -->
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="Logout">
+
+        <TextView
+
+            android:drawableStart="@drawable/logout"
+
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESCI"
+            android:textSize="20dp"
+            android:fontFamily="@font/sfarro_bold"
+            android:textColor="#153894"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
